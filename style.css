@@ -182,7 +182,7 @@ justify-content: center;
 .topPart{
 
 height: 85px;
-margin-bottom: 70px;
+
 display: flex;
 justify-content: center;
 flex-direction: column;
