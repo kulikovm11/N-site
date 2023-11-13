@@ -164,17 +164,18 @@ window.addEventListener('scroll', function() {
 // }
 
 
-const worksPage = document.getElementById('worksSection')
+// const worksPage = document.getElementById('worksSection')
 
-const workExamples = document.querySelectorAll('.workExample');
+// const workExamples = document.querySelectorAll('.workExample');
 
-
-for (let i = 0; i < workExamples.length; i++) {
+// for (let i = 0; i < workExamples.length; i++) {
    
 
-    if(i % 2 === 1){
-        workExamples[i].style.flexDirection = "row-reverse";
-    }
+//     if(i % 2 === 1&& window.innerWidth > 767){
+//         workExamples[i].style.flexDirection = "row-reverse";
+//     }
+       
     
-}
+    
+// }
 

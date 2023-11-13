@@ -1,0 +1,243 @@
+/* ///////////////HEADER start/////////////// */
+@media (max-width: 767px) {
+    .frame{
+        width: 300px;
+    }
+    
+    header {
+     
+        padding: 10px 20px;
+    }
+
+    .logo{
+        justify-content: space-between;
+        max-width: 80%;
+    }
+
+    .logo img {
+        width: 80px; 
+        height: auto;
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .logo span {
+        font-size: 20px; 
+    }
+
+    .menu {
+        display: none; 
+    }
+
+    .burger {
+        display: block; 
+        cursor: pointer;
+        width: 90px;
+        height: 90px;
+        
+    }
+    .burger img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(180deg);
+          }
+    }
+
+    .burger img {
+        transition: transform 0.3s ease; 
+    }
+
+    .burger:active img {
+        transform: scale(1.1); 
+    
+    }
+
+  
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(235, 216, 216, 0.5);
+        position: absolute;
+        top: 105px; 
+        left: 0;
+        width: 100%;
+        align-items: flex-end;
+        border-bottom-left-radius: 150px;
+        
+      
+    }
+
+    .appear {
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      .disappear {
+        animation: fadeOut 2s ease-in-out; 
+      }
+
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px; 
+        transition: 0.5s ease;
+    }
+    .mobile-menu img{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+   
+}
+
+/* ///////////////HEADER end/////////////// */
+
+/* ///////////////1-st Page start/////////////// */
+
+@media (max-width: 767px){
+
+    .firstPage.bgImage{
+        background-image: url('images/workPhotos/panorama.webp');
+         background-size: cover;
+         background-repeat: no-repeat;
+    }
+   
+    .rightPart{
+        display: none;
+    }
+
+    .leftPart{
+        width: 100%;
+        height: 100%;
+    }
+
+    .leftPart.bgImage{
+        background-image: url('images/workPhotos/panorama.webp');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: -132px 25px;
+    }
+
+    .topText{
+       
+        color: #5C8692;
+    }
+    .midText{
+        
+        color: #5C8692;
+    }
+    .bottomText{
+        
+        color: #555555;
+    } 
+}
+
+/* ///////////////1-st Page end/////////////// */
+
+/* ///////////////////////ABOUT US PAGE START */
+    
+    @media (max-width: 767px){
+    
+    }
+
+    /* ///////////////////////ABOUT US PAGE END */
+
+    /* ///////////////2-nd Page start/////////////// */
+
+    @media (max-width: 767px){
+        .squareBottom, .squareTop{
+            display: none;
+        }
+    
+        .shortDescription{
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            font-size: 14px;
+            color: #141414;
+            
+        }
+    
+        .workExample{
+            height: 525px;
+            margin-top: 10px;
+            display: flex;
+            margin: 0;
+            flex-direction: column;
+        }
+    
+        .points li{
+            font-family: 'Manrope', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #5C8692;
+            line-height: 20px;
+            letter-spacing: 0.26px;
+        }
+
+        .workExDescription {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 10px;
+        }
+
+        .workExImg {
+            width: 100%;
+            height: 70%;
+        
+    }
+}
+    
+    
+    /* ///////////////2-nd Page end/////////////// */
+
+    /* /////////////////////reviewPage start /////////////////////////////////////////  */
+
+
+
+
+
+
+
+/* /////////////////////reviewPage start ///////////////////////////////////////// */
+
+/* ////////////////////////////infoPageSection start //////////////////////////// */
+
+
+
+
+/* ////////////////////////////infoPageSection start //////////////////////////// */
+
+
+/* /////////////////////contacts start ///////////////////////////////////////// */
+
+
+
+
+
+
+
+
+/* /////////////////////contacts start ///////////////////////////////////////// */
+
+
+/* /////////////////////contacts end ///////////////////////////////////////// */

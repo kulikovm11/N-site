@@ -72,117 +72,6 @@ header a:hover{
 
 
 
-@media (max-width: 767px) {
-    .frame{
-        width: 300px;
-    }
-    
-    header {
-     
-        padding: 10px 20px;
-    }
-
-    .logo{
-        justify-content: space-between;
-        max-width: 80%;
-    }
-
-    .logo img {
-        width: 80px; 
-        height: auto;
-        margin-right: 0; 
-        margin-bottom: 10px; 
-    }
-
-    .logo span {
-        font-size: 20px; 
-    }
-
-    .menu {
-        display: none; 
-    }
-
-    .burger {
-        display: block; 
-        cursor: pointer;
-        width: 90px;
-        height: 90px;
-        
-    }
-    .burger img{
-        width: 100%;
-        height: 100%;
-        transition: transform 0.3s ease;
-    }
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(180deg);
-          }
-    }
-
-    .burger img {
-        transition: transform 0.3s ease; 
-    }
-
-    .burger:active img {
-        transform: scale(1.1); 
-    
-    }
-
-  
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(235, 216, 216, 0.5);
-        position: absolute;
-        top: 105px; 
-        left: 0;
-        width: 100%;
-        align-items: flex-end;
-        border-bottom-left-radius: 150px;
-        
-      
-    }
-
-    .appear {
-        animation: fadeIn 1s ease-in-out forwards;
-      }
-
-      .disappear {
-        animation: fadeOut 2s ease-in-out; 
-      }
-
-    @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-
-    .mobile-menu a {
-        text-decoration: none;
-        color: black;
-        padding: 10px 20px; 
-        transition: 0.5s ease;
-    }
-    .mobile-menu img{
-        width: 30px;
-        height: 30px;
-        margin: 0;
-        padding: 0;
-    }
-   
-
-
-}
-
-
 /* ///////////////HEADER end/////////////// */
 
 /* ///////////////1-st Page start/////////////// */
@@ -210,6 +99,7 @@ header a:hover{
     justify-content: center;
     padding-right: 20px;
 }
+
 .leftPart span {
     opacity: 0;
     transform: translateY(150px);
@@ -258,20 +148,13 @@ header a:hover{
     position: relative;
     bottom: 600px;
     right: 20px;
-    background-image: url('images/workPhotos/panorama.webp');
-    background-size: contain;
+    background-image: url('images/variant2.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     /* background-position: -115px 25px; */
    
 }
 
-@media (max-width: 767px){
-
-   
-    .rightPart{
-        display: none;
-    }
-}
 /* ///////////////1-st Page end/////////////// */
 
 
@@ -282,15 +165,18 @@ border: 1px solid black;
 height: 100vh;
 }
 
-@media (max-width: 767px){
 
-}
 /* ///////////////////////ABOUT US PAGE END */
 
 
 
 
 /* ///////////////2-nd Page start/////////////// */
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .secondPage{
     /* height: 100vh; */
     
@@ -386,11 +272,6 @@ height: 100vh;
     flex-direction: row-reverse;
 }
 
-@media (max-width: 767px){
-    .squareBottom, .squareTop{
-        display: none;
-    }
-}
 
 
 /* ///////////////2-nd Page end/////////////// */
@@ -447,3 +328,12 @@ height: 100vh;
 
 
 /* /////////////////////contacts start ///////////////////////////////////////// */
+.bottomLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url('images/KULIKOVA.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* /////////////////////contacts end ///////////////////////////////////////// */
