@@ -154,6 +154,12 @@
 /* ///////////////////////ABOUT US PAGE START */
     
     @media (max-width: 767px){
+
+        .aboutUsPage{
+            height: 110vh;
+           
+            
+            }
             
             .topPart{
             
