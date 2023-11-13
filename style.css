@@ -102,7 +102,7 @@ header a:hover{
 
 .leftPart span {
     opacity: 0;
-    transform: translateY(150px);
+    transform: translateY(-150px);
     transition: opacity 2.5s ease, transform 2.5s ease;
 }
 
@@ -142,6 +142,17 @@ header a:hover{
     height: 645px;
 }
 
+.rightPart  {
+    opacity: 0;
+    transform: translateY(160px);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.rightPart.show {
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
 .inner{
     width: 550px;
     height: 545px;
@@ -161,10 +172,117 @@ header a:hover{
 
 /* ///////////////////////ABOUT US PAGE START */
 .aboutUsPage{
-border: 1px solid black;
 height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
+.topPart{
+
+height: 85px;
+margin-bottom: 70px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.largeTxt{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #141414;
+}
+
+.smallTxt{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #5C8692;
+}
+
+                 
+.bottomPart{
+    
+    height: 468px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+ }
+
+
+ 
+ .fact{
+    width: 373.33px;
+    height: 209px;
+   
+ }
+ .geometry{
+    width: 94px;
+    height: 94px;
+    border: 2px solid #5C8692;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .backgroundFill{
+    background-image: url('images/RectangleMini.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .backgroundFill img{
+    width: 40px;
+    height: 40px;
+    transition: 1s ease;
+ }
+ .backgroundFill img:hover{
+    transform: rotate(180deg);
+ }
+
+ .factDesc{
+
+ }
+ 
+.factDesc span{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #141414;
+ }
+ .factDesc p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #555555;
+ }
+
+ .fact {
+    opacity: 0; /* Начальная непрозрачность */
+    transition: opacity 0.5s ease; /* Добавление плавной анимации */
+}
+
+.animate {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /* ///////////////////////ABOUT US PAGE END */
 
@@ -179,7 +297,7 @@ height: 100vh;
 }
 .secondPage{
     /* height: 100vh; */
-    
+    background-color: #EBF3F5;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

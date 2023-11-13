@@ -116,6 +116,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const span = document.querySelector(".rightPart");
+
+    span.classList.add("show");
+    
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     let hasPrinted = false;
 
@@ -178,4 +185,39 @@ window.addEventListener('scroll', function() {
     
     
 // }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let facts = document.querySelectorAll('.fact');
+    let delay = 250; // Задержка в миллисекундах между появлением элементов
+
+    function playAnimation() {
+        facts.forEach(function (fact, index) {
+            setTimeout(function () {
+                fact.classList.add('animate');
+            }, index * delay);
+        });
+
+        // Удаление обработчика события после выполнения анимации
+        window.removeEventListener("scroll", playAnimation);
+    }
+
+    // Добавление обработчика события для запуска анимации при прокрутке
+    window.addEventListener("scroll", playAnimation);
+
+    // Дополнительная проверка, чтобы запустить анимацию, если элементы находятся в видимой области при загрузке страницы
+    let isInViewport = function (elem) {
+        let bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    if (isInViewport(facts[0])) {
+        playAnimation();
+    }
+});
 
