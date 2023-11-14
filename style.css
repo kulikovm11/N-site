@@ -346,11 +346,18 @@ align-items: center;
     
     width: 50%;
     height: 100%;
-    /* background-image: url('images/workPhotos/326361414_2044537855756279_3099653709643109912_n.webp'); */
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url('images/gif/loading.gif') center / 50px no-repeat;
     box-shadow: 4px 4px 10px #000000;
+    position: relative;
+}
+
+.workExImg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
 }
 
 .workExDescription{
@@ -428,11 +435,12 @@ align-items: center;
 .contactsPageSection{
     
     border: 1px solid black;
-   height: 595px;
+   height: 250px;
    background-color: #1E2C30;
    display: flex;
    justify-content: flex-end;
    flex-direction: column;
+   align-items: center;
 
 }
 .bottomDecor{
@@ -440,18 +448,66 @@ align-items: center;
     background-color: #111E22;
 }
 
+.contactsContent{
+    height: 413px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactsTop{
+ border-bottom: 1px solid #fff;
+ height: 85px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.socialMedia{
+    background-image: url('images/RectangleforFooter.png');
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+   
+}
+
+.socialMedia:hover{
+    transform: scale(1.2);
+}
+
+.linksToSocial{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+.socialMedia img {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.contactsBottom{
+    
+    height: 265px;
+}
 
 
 
 
-
-/* /////////////////////contacts start ///////////////////////////////////////// */
 .bottomLogo{
-    width: 200px;
-    height: 200px;
+    width: 55px;
+    height: 55px;
     background-image: url('images/KULIKOVA.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+.bottomDecor{
+    text-align: center;
+    width: 100%;
 }
 
 /* /////////////////////contacts end ///////////////////////////////////////// */
